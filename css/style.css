@@ -1,11 +1,12 @@
 :root {
-    --join-bcg-: #292F36;
-    --text-color-: #4D5053;
-    --active-color: #CDA274;
-    --bcg-color-: #FFFFFF;
-    --info-bcg-: #F4F0EC;
-    --second-name-: #E7E7E7;
-    --third-color- : #E5E5E5; 
+    --join-bcg-: #292F36 ;
+    --text-color-: #4D5053 ;
+    --active-color-: #CDA274 ;
+    --bcg-color-: #FFFFFF ;
+    --info-bcg-: #F4F0EC ;
+    --second-name-: #E7E7E7 ;
+    --third-color-: #E5E5E5 ; 
+    --hover-button-dark-: #202429 ; 
 }
 
 /* font-family: "DM Serif Display"; */
@@ -20,7 +21,7 @@
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: burlywood;
+    outline: 5px solid burlywood;
 }
 
 /* Header */
@@ -64,11 +65,11 @@
 }
 
 .nav-link:active, .nav-link:hover {
-    color: var(--active-color);
+    color: var(--active-color-);
 }
 
 .active {
-    color: var(--active-color);
+    color: var(--active-color-);
 }
 
 /* Hero */
@@ -76,6 +77,7 @@
 .hero {
     height: 831px;
     padding-top: 188px;
+    padding-bottom: 260px;
     background-image: url(../images/living_room.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -115,17 +117,49 @@
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.72px;
-    /* background-image: url(../images/button_background_black.jpg);
-    width: 207px;
-    height: 71px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 21px;
+}
+
+.hero-button:hover, .hero-button:active {
+    background-color: var(--hover-button-dark-);
 }
 
 /* Section Details */
 
-/* .details-list {
+.details {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.details-list {
     display: flex;
-    align-content: space-between;
-} */
+    justify-content: center;
+}
+
+.details-item {
+    width: 400px;
+    height: 395px;
+    padding-top: 75px;
+    padding-bottom: 103px;
+}
+
+.details-item:nth-child(1) {
+    padding-left: 42px;
+    padding-right: 41px;
+}
+
+.details-item:nth-child(2) {
+    padding-left: 52px;
+    padding-right: 51px;
+}
+
+.details-item:nth-child(3) {
+    padding-left: 52px;
+    padding-right: 52px;
+}
 
 .details-title {
     color: var(--join-bcg-);
@@ -144,6 +178,9 @@
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.22px;
+    margin-top: 17px;
+    margin-bottom: 35px;
+
 }
 
 .details-more {
@@ -164,7 +201,23 @@
 
 /* Section Innovations */
 
+.innovations {
+    padding-top: 50px;
+    padding-bottom: 140px;
+}
+
+.inno-flex {
+    display: flex;
+}
+
+.innovations-info {
+    width: 592px;
+    height: 568px;
+}
+
 .innovations-title {
+    margin-top: 40px;
+    margin-bottom: 42px;
     color: var(--join-bcg-);
     font-family: "DM Serif Display";
     font-size: 50px;
@@ -174,11 +227,30 @@
 }
 
 .innovations-text {
+    width: 515px;
     color: var(--text-color-);
     font-size: 22px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.22px;
+}
+
+.innovations-under-text {
+    margin-bottom: 50px;
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.innovations-circle {
+    width: 93px;
+    height: 93px;
+    background-color: var(--info-bcg-);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .innovations-telephone {
@@ -198,20 +270,40 @@
 }
 
 .innovations-button {
+    width: 263px;
+    height: 71px;
+    background-color: var(--join-bcg-);
+    border: none;
+    border-radius: 18px;
     color: var(--bcg-color-);
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
 }
 
 /* Section Responces */
 
-.responces {
+.responces-radius {
+    padding-top: 103px;
+    padding-bottom: 121px;
+    padding-left: 51px;
+    padding-right: 51px;
+    width: 1200px;
+    height: 675px;
     background-color: var(--info-bcg-);
+    border-radius: 70px;
 }
 
 .responces-title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 47px;
+    width: 479px;
     color: var(--join-bcg-);
     text-align: center;
     font-family: "DM Serif Display";
@@ -219,6 +311,27 @@
     font-weight: 400;
     line-height: 1.3;
     letter-spacing: 0.22px;
+}
+
+.responces-list {
+    display: flex;
+    gap: 18px;
+}
+
+.responces-item {
+    width: 354px;
+    height: 287px;
+    padding-top: 50px;
+    padding-bottom: 45px;
+    padding-left: 35px;
+    padding-right: 75px;
+    background-color: var(--bcg-color-);
+    border-radius: 30px;
+}
+
+.responces-user {
+    display: flex;
+    gap: 20px;
 }
 
 .responces-name {
@@ -239,6 +352,7 @@
 }
 
 .responces-text {
+    margin-top: 25px;
     color: var(--text-color-);
     font-size: 20px;
     font-weight: 400;
@@ -248,11 +362,28 @@
 
 /* Section Partners */
 
+.partners {
+    padding-top: 140px;
+    padding-bottom: 50px;
+}
 
+.partners-list {
+    margin-left: 48px;
+    margin-right: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* Section Projects */
 
+.projects {
+    padding-top: 75px;
+    padding-bottom: 80px;
+}
+
 .projects-title {
+    margin-bottom: 20px;
     color: var(--join-bcg-);
     text-align: center;
     font-family: "DM Serif Display";
@@ -263,6 +394,7 @@
 }
 
 .projects-text {
+    margin-bottom: 71px;
     color: var(--text-color-);
     text-align: center;
     font-size: 22px;
@@ -295,7 +427,7 @@
 }
 
 .information-number {
-    color: var(--active-color);
+    color: var(--active-color-);
     text-align: center;
     font-family: "DM Serif Display";
     font-size: 85px;
@@ -446,7 +578,7 @@
 }
 
 .copyrights-author {
-    color: var(--active-color);
+    color: var(--active-color-);
     text-align: center;
     font-size: 22px;
     font-weight: 400;

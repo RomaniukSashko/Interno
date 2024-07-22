@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interno</title>
+    <link rel="website icon" type="image/png" href="./images/site-logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +34,7 @@
             <div class="container">
                 <h1 class="hero-title">Let's Create Your Dream Interior</h1>
                 <p class="hero-text">The world needs innovators and problem solvers who turn challenges into greater opportunities.</p>
-                <button type="button" class="hero-button">Get Started</button>
+                <button type="button" class="hero-button">Get Started<img src="./images/arrow_button.png" alt="arrow-button" class="hero-arrow"></button>
             </div>
         </section>
         <!-- Section Details -->
@@ -69,40 +70,60 @@
         </section>
         <!-- Section Innovations -->
         <section class="innovations">
-            <div class="container">
-                <h2 class="innovations-title">We Tackle The Most Challenging Designs</h2>
-                <p class="innovations-text">The world needs innovators and problem solvers who turn challenges into greater opportunities. We have an insatiable curiosity about transformative trends challenging the status.</p>
-                <img src="./images/telephone.png" alt="telephonelogo" class="innovations-pin">
-                <a href="tel:012345678" class="innovations-telephone">012345678</a>
-                <p class="innovations-remark">Call Us Anytime</p>
-                <button type="button" class="innovations-button">Get Free Estimate</button>
+            <div class="container inno-flex">
+                <div class="innovations-info">
+                    <h2 class="innovations-title">We Tackle The Most Challenging Designs</h2>
+                    <p class="innovations-text">The world needs innovators and problem solvers who turn challenges into greater opportunities. We have an insatiable curiosity about transformative trends challenging the status.</p>
+                    <div class="innovations-under-text">
+                        <div class="innovations-circle"><img src="./images/telephone.png" alt="telephonelogo" class="innovations-pin"></div>
+                        <div class="innovations-tel">
+                            <a href="tel:012345678" class="innovations-telephone">012345678</a>
+                            <p class="innovations-remark">Call Us Anytime</p>
+                        </div>
+                    </div>
+                    <button type="button" class="innovations-button">Get Free Estimate<img src="./images/arrow_button.png" alt="arrow-button" class="innovations-arrow"></button>
+                </div>
                 <img src="./images/kitchen.jpg" alt="kitchen" class="innovations-image">
             </div>
         </section>
         <!-- Section Responces -->
         <section class="responces">
             <div class="container">
-                <h2 class="responces-title">What the People Thinks About Interno</h2>
-                <ul class="responces-list">
-                    <li class="responces-item">
-                        <img src="./images/lisa.jpg" alt="lisa" class="responces-photo">
-                        <h3 class="responces-name">Lisa Clairton</h3>
-                        <p class="responces-location">New York, USA</p>
-                        <p class="responces-text">We selected Interno interior because of rigorous design background & education.</p>
-                    </li>
-                    <li class="responces-item">
-                        <img src="./images/david.jpg" alt="david" class="responces-photo">
-                        <h3 class="responces-name">David Knight</h3>
-                        <p class="responces-location">Sydney, Australia</p>
-                        <p class="responces-text">The team exceeded our expectations and emerged as leaders of our project’s.</p>
-                    </li>
-                    <li class="responces-item">
-                        <img src="./images/lisa_from_paris.jpg" alt="lisa" class="responces-photo">
-                        <h3 class="responces-name">Lisa Clairton</h3>
-                        <p class="responces-location">Paris, France</p>
-                        <p class="responces-text">They balanced the architectural vision and the project realities beautifully.</p>
-                    </li>
-                </ul>
+                <div class="responces-radius">
+                    <h2 class="responces-title">What the People Thinks About Interno</h2>
+                    <ul class="responces-list">
+                        <li class="responces-item">
+                            <div class="responces-user">
+                                <img src="./images/lisa.jpg" alt="lisa" class="responces-photo">
+                                <div class="responces-details">
+                                    <h3 class="responces-name">Lisa Clairton</h3>
+                                    <p class="responces-location">New York, USA</p>
+                                </div>
+                            </div>
+                            <p class="responces-text">We selected Interno interior because of rigorous design background & education.</p>
+                        </li>
+                        <li class="responces-item">
+                            <div class="responces-user">
+                                <img src="./images/david.jpg" alt="david" class="responces-photo">
+                                <div class="responces-details">
+                                    <h3 class="responces-name">David Knight</h3>
+                                    <p class="responces-location">Sydney, Australia</p>
+                                </div>
+                            </div>
+                            <p class="responces-text">The team exceeded our expectations and emerged as leaders of our project’s.</p>
+                        </li>
+                        <li class="responces-item">
+                            <div class="responces-user">
+                                <img src="./images/lisa_from_paris.jpg" alt="lisa" class="responces-photo">
+                                <div class="responces-details">
+                                    <h3 class="responces-name">Lisa Clairton</h3>
+                                    <p class="responces-location">Paris, France</p>
+                                </div>
+                            </div>
+                            <p class="responces-text">They balanced the architectural vision and the project realities beautifully.</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         <!-- Section Partners -->
@@ -125,27 +146,27 @@
                 <ul class="projects-list">
                     <li class="projects-item">
                         <img src="./images/sofa_with_plants.jpg" alt="sofawithplants" class="projects-image">
-                        <h3 class="projects-name">Winery Dry Creek Building</h3>
-                        <p class="projects-category">Art Modern</p>
-                        <img src="./images/arrow_right.png" alt="arrowright" class="projects-arrow">
+                                <h3 class="projects-name">Winery Dry Creek Building</h3>
+                                <p class="projects-category">Art Modern</p>
+                            <img src="./images/arrow_right.png" alt="arrowright" class="projects-arrow">
                     </li>
                     <li class="projects-item">
                         <img src="./images/table_with_chair.jpg" alt="tablewithhair" class="projects-image">
-                        <h3 class="projects-name">Creative Workplace Design</h3>
-                        <p class="projects-category">Minimalist</p>
-                        <img src="./images/arrow_right.png" alt="arrowright" class="projects-arrow">
+                                <h3 class="projects-name">Creative Workplace Design</h3>
+                                <p class="projects-category">Minimalist</p>
+                            <img src="./images/arrow_right.png" alt="arrowright" class="projects-arrow">
                     </li>
                     <li class="projects-item">
                         <img src="./images/nightstand_with_bed.jpg" alt="nightstandwithbed" class="projects-image">
-                        <h3 class="projects-name">Bedroom Interior Pot Work</h3>
-                        <p class="projects-category">Modern</p>
-                        <img src="./images/arrow_right.png" alt="arrowright" class="projects-arrow">
+                                <h3 class="projects-name">Bedroom Interior Pot Work</h3>
+                                <p class="projects-category">Modern</p>
+                            <img src="./images/arrow_right.png" alt="arrowright" class="projects-arrow">
                     </li>
                     <li class="projects-item">
                         <img src="./images/bedroom.jpg" alt="bedroom" class="projects-image">
-                        <h3 class="projects-name">Light Ambience Sepia Design</h3>
-                        <p class="projects-category">Scandinavian</p>
-                        <img src="./images/arrow_right.png" alt="arrowright" class="projects-arrow">
+                                <h3 class="projects-name">Light Ambience Sepia Design</h3>
+                                <p class="projects-category">Scandinavian</p>
+                            <img src="./images/arrow_right.png" alt="arrowright" class="projects-arrow">
                     </li>
                 </ul>
             </div>
