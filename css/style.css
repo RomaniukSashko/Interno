@@ -25,13 +25,16 @@
 
 /* Header */
 
+.top {
+    padding-top: 26px;
+    padding-bottom: 18px;
+}
+
 .head {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 485px;
-    margin-top: 26px;
-    margin-bottom: 18px;
 }
 
 .nav-list {
@@ -58,7 +61,6 @@
 /* Hero */
 
 .hero {
-    height: 831px;
     padding-top: 188px;
     padding-bottom: 260px;
     background-image: url(../images/living_room.jpg);
@@ -90,8 +92,10 @@
 }
 
 .hero-button {
-    width: 207px;
-    height: 71px;
+    padding-left: 34px;
+    padding-right: 20px;
+    padding-top: 18px;
+    padding-bottom: 17px;
     background-color: var(--join-bcg-);
     border: none;
     border-radius: 18px;
@@ -163,7 +167,10 @@
     letter-spacing: 0.22px;
     margin-top: 17px;
     margin-bottom: 35px;
+}
 
+.details-item:nth-child(1) > .details-text {
+    margin-bottom: 68px;
 }
 
 .details-more {
@@ -253,8 +260,10 @@
 }
 
 .innovations-button {
-    width: 263px;
-    height: 71px;
+    padding-left: 34px;
+    padding-right: 25px;
+    padding-top: 18px;
+    padding-bottom: 17px;
     background-color: var(--join-bcg-);
     border: none;
     border-radius: 18px;
@@ -609,8 +618,10 @@
 }
 
 .join-button {
-    width: 241px;
-    height: 71px;
+    padding-top: 19px;
+    padding-bottom: 16px;
+    padding-right: 15px;
+    padding-left: 34px;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--active-color-);
