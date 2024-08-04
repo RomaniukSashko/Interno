@@ -8,6 +8,7 @@
     --bottom-border-: #E5E5E5 ; 
     --hover-button-dark-: #202429 ; 
     --hover-button-light-: #be966c;
+    --hover-button-cards-: #efe8e1;
 }
 
 .basis {
@@ -452,6 +453,10 @@
     align-items: center;
 }
 
+.projects-circle:hover, .projects-circle:active {
+    background-color: var(--hover-button-cards-);
+}
+
 /* Section Information */
 
 .information {
@@ -528,6 +533,10 @@
     border: 1px solid var(--border-color-);
 }
 
+.recentblog-item:hover, .recentblog-item:active {
+    box-shadow: 0px 1px 12px 1px rgba(0,0,0,0.7);
+}
+
 .recentblog-image {
     border-radius: 45px 45px 0px 0px;
 }
@@ -579,6 +588,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.recentblog-circle:hover, .recentblog-circle:active {
+    background-color: var(--hover-button-cards-);
 }
 
 /* Section Join */
