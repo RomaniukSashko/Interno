@@ -190,6 +190,10 @@
     letter-spacing: 0.36px;
 }
 
+.details-link:hover, .details-link:active {
+    color: var(--active-color-);
+} 
+
 /* Section Innovations */
 
 .innovations {
@@ -250,6 +254,10 @@
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.22px;
+}
+
+.innovations-telephone:hover, .innovations-telephone:active {
+    color: var(--active-color-);
 }
 
 .innovations-remark {
@@ -709,6 +717,10 @@
     letter-spacing: 0.22px;
 }
 
+.pages-details:hover, .pages-details:active {
+    color: var(--active-color-);
+}
+
 .explore-item {
     margin-bottom: 30px;
 }
@@ -719,6 +731,10 @@
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.22px;
+}
+
+.explore-link:hover, .explore-link:active {
+    color: var(--active-color-);
 }
 
 .address-item {
@@ -732,6 +748,10 @@
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.22px;
+}
+
+.address-link:hover, .address-link:active {
+    color: var(--active-color-);
 }
 
 .bottom-copyrights {
