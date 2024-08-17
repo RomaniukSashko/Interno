@@ -21,7 +21,6 @@
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    /* outline: 5px solid burlywood; */
 }
 
 /* Header */
@@ -300,8 +299,6 @@
 .responces-radius {
     padding-top: 103px;
     padding-bottom: 121px;
-    /* padding-left: 51px;
-    padding-right: 51px; */
     background-color: var(--info-bcg-);
     border-radius: 70px;
 }
@@ -492,7 +489,6 @@
 
 .information-list {
     display: flex;
-    /* justify-content: space-between; */
     gap: 16px;
 }
 
