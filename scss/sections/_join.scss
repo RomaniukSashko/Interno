@@ -1,0 +1,59 @@
+.join {
+    padding-bottom: 70px;
+}
+
+.join-radius {
+    padding-top: 100px;
+    padding-bottom: 95px;
+    padding-right: 333px;
+    padding-left: 333px;
+    border-radius: 70px;
+    background-color: var(--join-bcg-);
+}
+
+.join-title {
+    color: var(--bcg-color-);
+    text-align: center;
+    font-family: "DM Serif Display";
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.22px;
+}
+
+.join-text {
+    margin-top: 9px;
+    margin-bottom: 31px;
+    color: var(--bcg-color-);
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.22px;
+}
+
+.join-button {
+    padding-top: 19px;
+    padding-bottom: 16px;
+    padding-right: 15px;
+    padding-left: 34px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--active-color-);
+    border: none;
+    border-radius: 18px;
+    color: var(--bcg-color-);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+}
+
+.join-button:hover, .join-button:active {
+    background-color: var(--hover-button-light-);
+}

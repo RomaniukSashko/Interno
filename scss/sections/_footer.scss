@@ -1,0 +1,122 @@
+.bottom-section-first {
+    border-top: 1px solid var(--bottom-border-);
+    border-bottom: 1px solid var(--bottom-border-);
+    padding-top: 50px;
+    padding-bottom: 110px;
+}
+
+.low {
+    display: flex;
+    gap: 76px;
+    justify-content: space-between;
+}
+
+.bottom-text {
+    margin-top: 15px;
+    margin-bottom: 29px;
+    width: 326px;
+    color: var(--text-color-);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.22px;
+}
+
+.bottom-list {
+    display: flex;
+    gap: 40px;
+}
+
+.bottom-title {
+    margin-bottom: 21px;
+    color: var(--join-bcg-);
+    font-family: "DM Serif Display";
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.22px;
+}
+
+.pages-item {
+    margin-bottom: 30px;
+}
+
+.pages-item:last-child {
+    margin: 0;
+}
+
+.pages-details {
+    color: var(--text-color-);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.22px;
+}
+
+.pages-details:hover, .pages-details:active {
+    color: var(--active-color-);
+}
+
+.explore-item {
+    margin-bottom: 30px;
+}
+
+.explore-item:last-child {
+    margin: 0;
+}
+
+.explore-link {
+    color: var(--text-color-);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.22px;
+}
+
+.explore-link:hover, .explore-link:active {
+    color: var(--active-color-);
+}
+
+.address-item {
+    width: 321px;
+    margin-bottom: 30px;
+}
+
+.address-item:last-child {
+    margin: 0;
+}
+
+.address-link {
+    color: var(--text-color-);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.22px;
+}
+
+.address-link:hover, .address-link:active {
+    color: var(--active-color-);
+}
+
+.bottom-copyrights {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.copyrights-details {
+    color: var(--text-color-);
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.22px;
+}
+
+.copyrights-author {
+    color: var(--active-color-);
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.22px;
+}

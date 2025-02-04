@@ -4,64 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interno</title>
-    <link rel="website icon" type="image/png" href="./images/site-logo.png">
+    <link rel="icon" type="image/svg+xml" href="./images/symbol-defs.svg#favicon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./style/main.min.css">
 </head>
-<body class="basis">
-    <header class="top">
-        <div class="container head">
-            <a href="./index.html" class="bottom-link"><img src="./images/logo_of_the_site.png" alt="site-logo" class="top-logo"></a> 
-            <nav class="top-nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="./index.html" class="nav-link active">Home</a></li>
-                    <li class="nav-item"><a href="./pages/aboutus.html" class="nav-link">About Us</a></li>
-                    <li class="nav-item"><a href="./pages/services.html" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="./pages/pages.html" class="nav-link">Pages</a></li>
-                    <li class="nav-item"><a href="./pages/contactus.html" class="nav-link">Contact Us</a></li>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="./index.html" class="header__link">
+                <svg class="header__logo">
+                    <use href="./images/symbol-defs.svg#logo"></use>
+                </svg>
+            </a> 
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="./index.html" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="./pages/aboutus.html" class="nav__link">About Us</a></li>
+                    <li class="nav__item"><a href="./pages/services.html" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="./pages/pages.html" class="nav__link">Pages</a></li>
+                    <li class="nav__item"><a href="./pages/contactus.html" class="nav__link">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main class="middle">
+    <main>
         <!-- Section Hero -->
         <section class="hero">
             <div class="container">
-                <h1 class="hero-title">Let's Create Your Dream Interior</h1>
-                <p class="hero-text">The world needs innovators and problem solvers who turn challenges into greater opportunities.</p>
-                <button type="button" class="hero-button">Get Started<img src="./images/arrow_button.png" alt="arrow-button" class="hero-arrow"></button>
+                <h1 class="hero__title">Let's Create Your Dream Interior</h1>
+                <p class="hero__text">The world needs innovators and problem solvers who turn challenges into greater opportunities.</p>
+                <button type="button" class="hero__button">
+                    Get Started
+                    <svg class="hero__icon">
+                        <use href="./images/symbol-defs.svg#arrow-right"></use>
+                    </svg>
+                </button>
             </div>
         </section>
         <!-- Section Details -->
         <section class="details">
             <div class="container">
-                <ul class="details-list">
-                    <li class="details-item">
-                        <h3 class="details-title">Interior Design</h3>
-                        <p class="details-text">Enhancing the interior to achieve a healthier environment for the people using right space.</p>
-                        <div class="details-more">
-                            <a href="#" class="details-link">View More</a>
-                            <img src="./images/arrow_right_long.png" alt="arrowright" class="details-image">
+                <ul class="details__list">
+                    <li class="details__item">
+                        <h3 class="details__title">Interior Design</h3>
+                        <p class="details__text">Enhancing the interior to achieve a healthier environment for the people using right space.</p>
+                        <div class="details__more">
+                            <a href="#" class="details__link">View More</a>
+                            <svg class="details__icon">
+                                <use href="./images/symbol-defs.svg#small-arrow-right"></use>
+                            </svg>
                         </div>
                     </li>
-                    <li class="details-item">
-                        <h3 class="details-title">Furniture</h3>
-                        <p class="details-text">Movable articles that are used to make a room or building suitable for living or working.</p>
-                        <div class="details-more">
-                            <a href="#" class="details-link">View More</a>
-                            <img src="./images/arrow_right_long.png" alt="arrowright" class="details-image">
+                    <li class="details__item">
+                        <h3 class="details__title">Furniture</h3>
+                        <p class="details__text">Movable articles that are used to make a room or building suitable for living or working.</p>
+                        <div class="details__more">
+                            <a href="#" class="details__link">View More</a>
+                            <svg class="details__icon">
+                                <use href="./images/symbol-defs.svg#small-arrow-right"></use>
+                            </svg>
                         </div>
                     </li>
-                    <li class="details-item">
-                        <h3 class="details-title">Flooring</h3>
-                        <p class="details-text">Thin object any finished material applied over a floor structure to provide a walking surface.</p>
-                        <div class="details-more">
-                            <a href="#" class="details-link">View More</a>
-                            <img src="./images/arrow_right_long.png" alt="arrowright" class="details-image">
+                    <li class="details__item">
+                        <h3 class="details__title">Flooring</h3>
+                        <p class="details__text">Thin object any finished material applied over a floor structure to provide a walking surface.</p>
+                        <div class="details__more">
+                            <a href="#" class="details__link">View More</a>
+                            <svg class="details__icon">
+                                <use href="./images/symbol-defs.svg#small-arrow-right"></use>
+                            </svg>
                         </div>
                     </li>
                 </ul>
@@ -69,57 +83,78 @@
         </section>
         <!-- Section Innovations -->
         <section class="innovations">
-            <div class="container inno-flex">
-                <div class="innovations-info">
-                    <h2 class="innovations-title">We Tackle The Most Challenging Designs</h2>
-                    <p class="innovations-text">The world needs innovators and problem solvers who turn challenges into greater opportunities. We have an insatiable curiosity about transformative trends challenging the status.</p>
-                    <div class="innovations-under-text">
-                        <div class="innovations-circle"><img src="./images/telephone.png" alt="telephonelogo" class="innovations-pin"></div>
-                        <div class="innovations-tel">
-                            <a href="tel:012345678" class="innovations-telephone">012345678</a>
-                            <p class="innovations-remark">Call Us Anytime</p>
+            <div class="container">
+                <div class="innovations__info">
+                    <h2 class="innovations__title">We Tackle The Most Challenging Designs</h2>
+                    <p class="innovations__text">The world needs innovators and problem solvers who turn challenges into greater opportunities. We have an insatiable curiosity about transformative trends challenging the status.</p>
+                    <div class="innovations__undertext">
+                        <div class="innovations__circle">
+                            <svg class="innovations__phone">
+                                <use href="./images/symbol-defs.svg#phone"></use>
+                            </svg>
+                        </div>
+                        <div class="innovations__tel">
+                            <a href="tel:012345678" class="innovations__telephone">012345678</a>
+                            <p class="innovations__remark">Call Us Anytime</p>
                         </div>
                     </div>
-                    <button type="button" class="innovations-button">Get Free Estimate<img src="./images/arrow_button.png" alt="arrow-button" class="innovations-arrow"></button>
+                    <button type="button" class="innovations__button">
+                        Get Free Estimate
+                        <svg class="innovations__icon">
+                            <use href="./images/symbol-defs.svg#arrow-right"></use>
+                        </svg>
+                    </button>
                 </div>
-                <img src="./images/kitchen.jpg" alt="kitchen" class="innovations-image">
+                <picture>
+                    <source srcset="./images/innovations-img@1x.webp 1x, ./images/innovations-img@2x.webp 2x">
+                    <img src="./images/innovations-img@1x.webp" alt="kitchen" class="innovations__image">
+                </picture>
             </div>
         </section>
         <!-- Section Responces -->
         <section class="responces">
             <div class="container">
-                <div class="responces-radius">
-                    <h2 class="responces-title">What the People Thinks About Interno</h2>
-                    <ul class="responces-list">
-                        <li class="responces-item">
-                            <div class="responces-user">
-                                <img src="./images/lisa.jpg" alt="lisa" class="responces-photo">
-                                <div class="responces-details">
-                                    <h3 class="responces-name">Lisa Clairton</h3>
-                                    <p class="responces-location">New York, USA</p>
+                <div class="responces__radius">
+                    <h2 class="responces__title">What the People Thinks About Interno</h2>
+                    <ul class="responces__list">
+                        <li class="responces__item">
+                            <div class="responces__user">
+                                <picture>
+                                    <source srcset="./images/lisa@1x.webp 1x, ./images/lisa@2x.webp 2x">
+                                    <img src="./images/lisa@1x.webp" alt="lisa" class="innovations__photo">
+                                </picture>
+                                <div class="responces__details">
+                                    <h3 class="responces__name">Lisa Clairton</h3>
+                                    <p class="responces__location">New York, USA</p>
                                 </div>
                             </div>
-                            <p class="responces-text">We selected Interno interior because of rigorous design background & education.</p>
+                            <p class="responces__text">We selected Interno interior because of rigorous design background & education.</p>
                         </li>
-                        <li class="responces-item">
-                            <div class="responces-user">
-                                <img src="./images/david.jpg" alt="david" class="responces-photo">
-                                <div class="responces-details">
-                                    <h3 class="responces-name">David Knight</h3>
-                                    <p class="responces-location">Sydney, Australia</p>
+                        <li class="responces__item">
+                            <div class="responces__user">
+                                <picture>
+                                    <source srcset="./images/david@1x.webp 1x, ./images/david@2x.webp 2x">
+                                    <img src="./images/david@1x.webp" alt="david" class="innovations__photo">
+                                </picture>
+                                <div class="responces__details">
+                                    <h3 class="responces__name">David Knight</h3>
+                                    <p class="responces__location">Sydney, Australia</p>
                                 </div>
                             </div>
-                            <p class="responces-text">The team exceeded our expectations and emerged as leaders of our project’s.</p>
+                            <p class="responces__text">The team exceeded our expectations and emerged as leaders of our project’s.</p>
                         </li>
-                        <li class="responces-item">
-                            <div class="responces-user">
-                                <img src="./images/lisa_from_paris.jpg" alt="lisa" class="responces-photo">
-                                <div class="responces-details">
-                                    <h3 class="responces-name">Lisa Clairton</h3>
-                                    <p class="responces-location">Paris, France</p>
+                        <li class="responces__item">
+                            <div class="responces__user">
+                                <picture>
+                                    <source srcset="./images/lisafromparis@1x.webp 1x, ./images/lisafromparis@2x.webp 2x">
+                                    <img src="./images/lisafromparis@1x.webp" alt="lisa from paris" class="innovations__photo">
+                                </picture>
+                                <div class="responces__details">
+                                    <h3 class="responces__name">Lisa Clairton</h3>
+                                    <p class="responces__location">Paris, France</p>
                                 </div>
                             </div>
-                            <p class="responces-text">They balanced the architectural vision and the project realities beautifully.</p>
+                            <p class="responces__text">They balanced the architectural vision and the project realities beautifully.</p>
                         </li>
                     </ul>
                 </div>
@@ -211,7 +246,7 @@
             </div>
         </section>
         <!-- Section Recent Blogs -->
-        <section id="recentblog">
+        <section id="blog" class="blog">
             <div class="container">
                 <h2 class="recentblog-title">Recent Blogs</h2>
                 <p class="recentblog-text">Get updates about our latest trends and techniques used in interior design project works.</p>
@@ -314,11 +349,11 @@
             <div class="bottom-third">
                 <h3 class="bottom-title">Explore</h3>
                 <ul class="explore-list">
-                    <li class="explore-item"><a href="./pages/aboutus.html" class="explore-link">About Us</a></li>
-                    <li class="explore-item"><a href="#recentblog" class="explore-link">Recent Blog</a></li>
+                    <li class="explore-item"><a href="#" class="explore-link">About Us</a></li>
+                    <li class="explore-item"><a href="#blog" class="explore-link">Recent Blog</a></li>
                     <li class="explore-item"><a href="#" class="explore-link">Pricing Plan</a></li>
                     <li class="explore-item"><a href="#" class="explore-link">Our Projects</a></li>
-                    <li class="explore-item"><a href="./pages/contactus.html" class="explore-link">Contact Us</a></li>
+                    <li class="explore-item"><a href="#" class="explore-link">Contact Us</a></li>
                 </ul>
             </div>
             <div class="bottom-fourth">

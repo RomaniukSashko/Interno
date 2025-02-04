@@ -1,0 +1,39 @@
+.header {
+    padding-top: 26px;
+    padding-bottom: 30px;
+
+    & > .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 177px;
+        height: 50px;
+    }
+}
+
+.nav {
+
+    &__list {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__link {
+        color: $join-bcg;
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 1.58;
+        letter-spacing: 0.4px;
+
+        &:active, &:hover {
+            color: $active-color;
+        }
+    }
+}
+
+.active {
+    color: $active-color;
+}

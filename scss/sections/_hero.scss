@@ -1,0 +1,63 @@
+.hero {
+    padding-top: 188px;
+    padding-bottom: 260px;
+    background-image: url(../images/hero-bcg@1x.webp);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../images/hero-bcg@2x.webp);
+    }
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0px 0px 0px 290px;
+
+    &__title {
+        width: 595px;
+        margin-bottom: 18px;
+        color: $join-bcg;
+        font-family: "DM Serif Display";
+        font-size: 80px;
+        font-weight: 400;
+        line-height: 1.2;
+        letter-spacing: 0.22px;
+    }
+
+    &__text {
+        width: 577px;
+        margin-bottom: 35px;
+        color: $text-color;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.22px;
+    }
+
+    &__button {
+        padding: 18px 20px 17px 34px;
+        background-color: $join-bcg;
+        border: none;
+        border-radius: 18px;
+        color: $bcg-color;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.72px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 21px;
+
+        &:hover, &:active {
+            background-color: $hover-button-dark;
+        }
+    }
+
+    &__icon {
+        fill: $active-color;
+        width: 26px;
+        height: 36px;
+    }
+}
