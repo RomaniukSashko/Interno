@@ -39,6 +39,9 @@ body {
 .header {
   padding-top: 26px;
   padding-bottom: 30px;
+  position: fixed;
+  width: 100%;
+  background-color: white;
 }
 .header > .container {
   display: flex;
